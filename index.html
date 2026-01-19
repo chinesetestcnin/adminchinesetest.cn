@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>中文考试成绩在线验证结果查询</title>
     <style>
         body { font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif; background-color: #fff; margin: 0; padding: 0; text-align: center; color: #333; }
@@ -22,12 +22,12 @@
         .score-row td { text-align: center; background-color: #fff; height: 35px; }
         .footer-text { font-size: 10px; color: #333; margin-top: 15px; padding-bottom: 20px; }
 
-        /* Mobile Adjustments to match Andreas look without desktop site */
+        /* Mobile specific fixes to look like Andreas WITHOUT Desktop Site */
         @media screen and (max-width: 600px) {
             .container { padding: 5px; }
-            th { width: 38%; }
-            .photo-cell { width: 105px; }
-            .photo-cell img { width: 95px; }
+            th { width: 40%; }
+            .photo-cell { width: 100px; }
+            .photo-cell img { width: 95px !important; height: auto !important; display: block !important; }
             td, th { padding: 4px 5px; font-size: 10px; }
             h2 { font-size: 16px; }
         }
@@ -72,8 +72,8 @@
             <td>62</td>
             <td>58</td>
             <td>60</td>
-            <td>180</td>
-            <td>合格</td>
+            <td style="font-weight:bold;">180</td>
+            <td style="font-weight:bold;">合格</td>
         </tr>
     </table>
 
@@ -86,8 +86,8 @@
         </tr>
         <tr class="score-row">
             <td>65</td>
-            <td>65</td>
-            <td>合格</td>
+            <td style="font-weight:bold;">65</td>
+            <td style="font-weight:bold;">合格</td>
         </tr>
     </table>
 
